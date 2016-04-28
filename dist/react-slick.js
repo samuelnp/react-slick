@@ -846,7 +846,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        animating: true,
 	        currentSlide: targetSlide
 	      }, function () {
-	        _this.animationEndCallback = setTimeout(callback, _this.props.speed);
+	        this.animationEndCallback = setTimeout(callback, this.props.speed);
 	      });
 
 	      if (this.props.beforeChange) {
@@ -949,7 +949,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        currentSlide: currentSlide,
 	        trackStyle: (0, _trackHelper.getTrackAnimateCSS)((0, _objectAssign2['default'])({ left: targetLeft }, this.props, this.state))
 	      }, function () {
-	        _this.animationEndCallback = setTimeout(callback, _this.props.speed);
+	        this.animationEndCallback = setTimeout(callback, this.props.speed);
 	      });
 	    }
 
